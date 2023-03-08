@@ -10,7 +10,7 @@ import java.sql.Statement;
 public class Main {
 
 
-    int narcis;
+
     public static void main(String[] args) {
         try {
             Class.forName("org.sqlite.JDBC");
