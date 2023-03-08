@@ -9,6 +9,7 @@ import java.sql.Statement;
 
 public class Main {
 
+    int nastea;
     public static void main(String[] args) {
         try {
             Class.forName("org.sqlite.JDBC");
