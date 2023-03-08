@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 public class Main {
 
-    int nastea;
+
     int narcis;
     public static void main(String[] args) {
         try {
