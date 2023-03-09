@@ -17,5 +17,5 @@ public class AngajatTC implements TableCreator {
         statement.executeUpdate(sqlCreate);
         statement.close();
         connection.commit();
-     }
+    }
 }
