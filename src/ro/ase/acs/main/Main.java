@@ -16,19 +16,18 @@ public class Main {
     public static void main(String[] args) {
         try {
             ConnectionMan connectionManager = new AngajatCM();
-            Connection connection = connectionManager.getConnection();
 
 
             TableCreator employeeTableCreator = new AngajatTC();
-            employeeTableCreator.createTable(connection);
+            employeeTableCreator.createTable(connectionManager.getConnection());
 
             DataInsertor employeeDataInsertor = new AngajatDI();
-            employeeDataInsertor.inserData(connection);
+            employeeDataInsertor.inserData(connectionManager.getConnection());
 
             DataReader employeeReader = new AngajatDR();
-            employeeReader.readData(connection);
+            employeeReader.readData(connectionManager.getConnection());
 
-            connection.close();
+            connectionManager.getConnection().close();
         } catch (Exception e) {
             e.printStackTrace();
         }
